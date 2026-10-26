@@ -1,0 +1,413 @@
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px
+}
+
+body {
+    margin: 0;
+    background: #f8f1ed url('assets/fondo.svg') repeat;
+    color: #202e49;
+    font-family: Arial, sans-serif;
+    line-height: 1.65
+}
+
+.contenedor {
+    max-width: 1160px;
+    margin: 32px auto;
+    background: #fffdf9;
+    box-shadow: 0 18px 70px #44302c0c;
+    border: 1px solid #e9ddd6;
+    border-radius: 8px;
+    overflow: hidden
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 48px;
+    border-bottom: 1px solid #eee4de
+}
+
+.marca img {
+    display: block
+}
+
+nav {
+    display: flex;
+    gap: 26px
+}
+
+a {
+    color: inherit
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 13px
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:focus-visible {
+    outline: 3px solid #b9677e;
+    outline-offset: 5px
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    align-items: center;
+    padding: 72px 56px 64px;
+    gap: 30px
+}
+
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+    color: #9c5a6d
+}
+
+h1,
+h2,
+h3 {
+    font-family: Georgia, serif;
+    font-weight: 400;
+    line-height: 1.15
+}
+
+h1 {
+    font-size: 52px;
+    margin: 20px 0
+}
+
+h1 em {
+    font-weight: 400;
+    color: #9c5a6d
+}
+
+h2 {
+    font-size: 35px;
+    margin: 14px 0 24px
+}
+
+h3 {
+    font-size: 29px;
+    margin: 20px 0
+}
+
+.intro {
+    font-size: 15px;
+    color: #605e63;
+    max-width: 470px
+}
+
+.boton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background: #202e49;
+    color: white;
+    border-radius: 4px;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-top: 20px
+}
+
+.nota {
+    font-size: 11px;
+    color: #777
+}
+
+.ilustracion {
+    position: relative;
+    min-height: 350px;
+    background: #f5e7e4;
+    border-radius: 48% 48% 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.bolsa {
+    position: relative;
+    z-index: 2;
+    margin-top: 50px;
+    width: 180px;
+    height: 208px;
+    background: linear-gradient(110deg, #e5a9b7, #f1c5cc);
+    box-shadow: 15px 15px 0 #dca4af45;
+    transform: rotate(-6deg);
+    display: grid;
+    place-items: center;
+    border-radius: 3px
+}
+
+.asa {
+    position: absolute;
+    top: 55px;
+    width: 92px;
+    height: 100px;
+    border: 9px solid #a05e72;
+    border-bottom: 0;
+    border-radius: 60px 60px 0 0;
+    transform: rotate(-6deg)
+}
+
+.sello {
+    border-radius: 50%;
+    background: #fff9f1;
+    width: 87px;
+    height: 87px;
+    text-align: center;
+    padding: 12px;
+    font: 32px Georgia;
+    color: #202e49
+}
+
+.sello small {
+    display: block;
+    font: 8px Arial;
+    letter-spacing: 2px
+}
+
+.lazo {
+    position: absolute;
+    top: -33px;
+    font-size: 68px;
+    color: #202e49;
+    line-height: 1
+}
+
+.estrella {
+    position: absolute;
+    color: #a77035;
+    font-size: 48px
+}
+
+.e1 {
+    top: 30px;
+    right: 28px
+}
+
+.e2 {
+    bottom: 55px;
+    left: 22px
+}
+
+.ilustracion>p {
+    position: absolute;
+    bottom: -26px;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 14px;
+    background: #fffdf9;
+    padding: 6px 16px
+}
+
+.detalles {
+    padding: 45px 56px 60px;
+    border-top: 1px solid #eee4de
+}
+
+.opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px
+}
+
+article {
+    padding: 30px;
+    background: #f7f3ed;
+    border-radius: 5px
+}
+
+article.especial {
+    background: #f5e8e8
+}
+
+article p {
+    font-size: 14px;
+    color: #605e63
+}
+
+.numero {
+    font-size: 10px;
+    letter-spacing: 1.6px
+}
+
+.precio {
+    font-family: Georgia;
+    font-size: 34px;
+    color: #202e49;
+    margin-bottom: 0
+}
+
+.precio small {
+    font: 11px Arial
+}
+
+.disponibilidad {
+    font-size: 11px;
+    color: #71676b
+}
+
+.video {
+    background: #202e49;
+    color: #fffdf9;
+    padding: 42px 56px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between
+}
+
+.video .eyebrow {
+    color: #efbfc9
+}
+
+.video h2 {
+    font-size: 31px;
+    max-width: 440px
+}
+
+.video p {
+    font-size: 13px;
+    max-width: 460px
+}
+
+.claro {
+    white-space: nowrap;
+    background: #f2c8cf;
+    color: #202e49;
+    margin: 0
+}
+
+.contacto {
+    text-align: center;
+    padding: 64px 28px
+}
+
+.contacto a {
+    font-size: 14px;
+    color: #9c5a6d
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    background: #f4f0eb;
+    padding: 28px 56px;
+    font-size: 12px
+}
+
+footer p {
+    margin: 3px 0
+}
+
+footer strong {
+    font-family: Georgia;
+    font-size: 21px
+}
+
+footer a {
+    overflow-wrap: anywhere
+}
+
+@media(max-width:700px) {
+    .contenedor {
+        margin: 12px
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 35px 24px 45px
+    }
+
+    h1 {
+        font-size: 39px
+    }
+
+    #header {
+        padding: 14px 20px
+    }
+
+    nav {
+        gap: 12px
+    }
+
+    nav a {
+        font-size: 11px
+    }
+
+    .marca img {
+        width: 62px;
+        height: 62px
+    }
+
+    .ilustracion {
+        max-width: 360px;
+        width: 100%;
+        margin: 15px auto
+    }
+
+    .detalles {
+        padding: 32px 24px
+    }
+
+    .opciones {
+        grid-template-columns: 1fr
+    }
+
+    .video {
+        padding: 35px 24px;
+        display: block
+    }
+
+    .video .boton {
+        margin-top: 12px
+    }
+
+    footer {
+        padding: 25px 24px;
+        flex-direction: column;
+        gap: 16px
+    }
+
+    h2 {
+        font-size: 30px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+}
+.foto-producto {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: 280px;
+  object-fit: contain;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.portada img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+}
